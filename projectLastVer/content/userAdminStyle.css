@@ -1,0 +1,466 @@
+﻿form, body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box;
+}
+
+.base_div {
+    width: 100%;
+    position: relative;
+
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+/************************* HEADER *************** */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    height: 7rem;
+    text-align: center;
+    background: #2F4F4F;
+    color: white;
+    font-size: 30px;
+}
+
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+.header-right {
+    float: right;
+}
+/*******************************************BODY*/
+.con {
+
+    width: 100%;
+
+    /******************************* PROFILE***********/
+}
+
+#myProfile {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    display: inline-block;
+    border: none;
+    color:white;
+
+}
+
+#coverProfile {
+
+    background-size:cover;
+
+    height: 40%;
+    width: 100%;
+
+}
+#coverProfile img {
+    width:50%;
+    float:left;
+}
+.user-Name {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 46%;
+    bottom: 3rem;
+}
+#userName {
+    margin-top:2rem;
+}
+.profileImg {
+    position: absolute;
+    top: 1rem;
+    left: 45%;
+    vertical-align: middle;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: .3rem solid;
+    border-color: red;
+}
+
+.emailContainer, .contryContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+.conLine {
+    background: rgba(179, 0, 0, 0.4);
+    border: none;
+    height: 35%;
+    width: 75%;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailContainer, .contryContainer {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+}
+
+.contryContainer {
+    border-left: .1rem solid;
+}
+
+#personalInfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+    background: rgba(179, 0, 0, 0.2);
+}
+/**************************AddNEWRECIPE*/
+
+#backDark {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#editRecipeBackDark {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#addNewRecipe, #editRecipe {
+    background-color: #2F4F4F;
+    width: 80rem;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 15%;
+    animation-name: addAni;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    z-index: 9;
+}
+
+@keyframes addAni {
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.Instructions textarea, .editRecipe_Instructions textarea {
+    width: 65%;
+}
+#InstructionsTxt {
+    padding:.5rem;
+}
+.Instructions, .editRecipe_Instructions {
+    display: flex;
+}
+.Instructions p,.editRecipe_Instructions p {
+    justify-content: center;
+    display: flex;
+    font-size:1.3rem;
+    align-items:center;
+    margin: 0 .5rem;
+}
+#addNewRecipe .col-6, #addNewRecipe .col-3, #addNewRecipe .col-12, #editRecipe .col-6, #editRecipe .col-12, #editRecipe .col-3 {
+    display: block;
+    font-size: 1.3rem;
+    color: white;
+}
+.addnew_buttons {
+    width:100%;
+    display: flex;
+    justify-content: flex-end
+}
+
+#showIngredients, #editRecipe_showIngredients {
+    overflow-y: auto;
+    background-color: gray;
+    margin: 1rem;
+    overflow-x: hidden;
+    margin-top: 5rem;
+    height:20rem;
+}
+ul#showIngList,ul#editRecipe_showIngList {
+    padding: 0 1rem;
+}
+#addNewTitle, #editRecipeTitle {
+    text-align: center;
+    margin: 1rem;
+    background: rgba(179, 0, 0, 0.2);
+}
+#recipeName, #recipeCategory, #description, #uploadImage, #ingredients, #quantity, #units, #editRecipeName, #editRecipe_recipeCategory, #editRecipe_description, #editRecipe_ingredients, #editRecipe_quantity, #editRecipe_units {
+    display: flex;
+    padding: 1rem;
+}
+
+#addNewRecipe .col-6 p, #addNewRecipe .col-3 p, #editRecipe .col-6 p, #editRecipe .col-3 p {
+    width: 10rem;
+    float: left;
+    font-size: 1.4rem;
+    text-align: center;
+}
+#addNewRecipe .col-6 input, #addNewRecipe .col-3 input, #editRecipe .col-6 input, #editRecipe .col-3 input {
+    width: 50%;
+    height: 3rem;
+}
+#addNewRecipe .col-3 #ingredients input {
+    width:20rem;
+}
+#addNewRecipe .col-6 input.descriptionInput {
+    height: 10rem;
+}
+#addNewRecipe .col-3 input#ingredientsInput, #editRecipe .col-3 input#editRecipe_ingredientsInput {
+    width: 20rem;
+}
+#editRecipe_description {
+    float:left;
+}
+.addBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#addIngBtn, #editRecipe_addIngBtn {
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 10rem;
+}
+#addNewRecipe .col-6 button, #addNewRecipe .col-12 button, #editRecipe .col-6 button, #editRecipe .col-12 button, #submitButton, #editRecipe_submitButton {
+    font-size: 1.4rem;
+    margin: 1rem;
+    height: 3rem;
+    width: 10rem;
+}
+
+#addButton {
+    left: .5rem;
+    bottom: 4rem;
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    opacity: 1;
+    font-size: 3rem;
+    color:white;
+    background-color: #006600;
+    border-radius: 50%;
+    border: 0;
+}
+/*************************myRecipes*****/
+#myRecipes {
+    width: 100%;
+    display: inline-block;
+    font-size: 3rem;
+
+}
+/*****************Alwan CSS***/
+
+
+.cancelBtn, .saveBtn {
+    display: none;
+}
+
+.showbtn {
+    display: block;
+}
+
+.hidebtn {
+    display: none;
+}
+
+.editMyRecipe {
+    display: flex;
+}
+
+.saveBtn {
+    margin-left: 1rem;
+}
+/*******************************Admin Page***************/
+
+
+
+.mainRow {
+    width: 100%;
+    position: relative;
+}
+
+    .mainRow .row, .mainRow .col-12, .mainRow .col-lg-8 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainRow .userRecipes {
+        position: absolute;
+        right: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+.userManage {
+    height: 54rem;
+    z-index: 11;
+    padding: 0;
+    margin: 0;
+    width: 34rem;
+}
+
+.selectUser, .userStatistics {
+    height: 12rem;
+    background: rgba(179, 0, 0, 0.2);
+    display: inline-table;
+    width: 100%;
+}
+
+.showUserInfo {
+    height: 28rem;
+    background: rgba(179, 0, 0, 0.2);
+    margin: .1rem;
+}
+
+.userRowTitle {
+    height: 3rem;
+    background: rgba(0, 0,0, 0.5);
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.AdminMainContainer .searchContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 9rem;
+}
+
+.AdminMainContainer .searchContainer input[type=text] {
+    font-size: 1.3rem;
+    text-align: left;
+    width: 50%;
+    margin: 0 1rem;
+    height: 3rem;
+}
+.searchUserHintsContainer {
+    width: 50%;
+    position: absolute;
+    max-height: 20rem;
+    overflow-y: auto;
+    top: 10rem;
+    background: rgba(0, 0,0, 0.7);
+    z-index: 20;
+    left: 15%;
+}
+.searchUserHintsContainer ul {
+    padding:0;
+}
+
+.searchUserHintsContainer ul li {
+    padding:.5rem 1rem;
+    list-style-type:none;
+    
+}
+.searchUserHintsContainer ul li:hover {
+    background: rgba(179, 0, 0, 0.2);
+    cursor:pointer;
+}
+.selectUser button {
+    margin: 0 1rem;
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.3rem;
+}
+
+.userRecipesRowTitle, .searchUserRecipes {
+    margin: .5rem 0;
+    height: 5rem;
+    background: rgba(0, 0,0, 0.5);
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.searchUserRecipes {
+    display: inline-table;
+    width: 100%;
+    text-align: center;
+}
+
+    .searchUserRecipes button {
+        width: 8rem;
+        margin: 1rem;
+        height: 3rem;
+        font-size: 1.3rem;
+    }
+#standardRecipe {
+    display:none;
+}

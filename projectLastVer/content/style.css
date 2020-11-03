@@ -1,0 +1,1006 @@
+﻿form, html {
+    font-size: 62.5%;
+    color: gray;
+    font-family:,Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://previews.123rf.com/images/klenova/klenova1907/klenova190700064/126875554-healthy-food-cooking-background-vegetable-ingredients-and-homemade-soup-fresh-garden-carrots-onions-.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: .9;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar, .navBarBackground {
+    font-size: 2.5rem;
+    height: 8rem;
+    width: 100%;
+    background-color: #212639;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+}
+.navBar, .navBarBackground {
+    font-size: 2.5rem;
+    height: 8rem;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+}
+.navBarBackground {
+    position: unset;
+    margin-bottom: 1rem;
+}
+
+.navBarLeft { /* container for logo and site name*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    min-width: 30rem;
+}
+
+.logoContainer {
+    width: 10rem;
+    height: 90%;
+    position: relative;
+    float: left;
+}
+
+.logoContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+}
+
+.siteName {
+    text-transform: uppercase;
+    font-family: 'Chilanka', cursive;
+    color: white;
+}
+
+.navBarTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarRigth {
+    min-width: 20rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-family: "Source Sans Pro",Times,serif;
+}
+
+.navBarRigth div {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBarRigth a {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    align-items: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    position: relative;
+    border-left: 1px solid black;
+    padding: .5rem .5rem;
+}
+
+.navBarTop .searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    margin: 0 5rem;
+    text-align: center
+}
+
+.hintsContainer {
+    width: 100%;
+    position: absolute;
+    top: 5.5rem;
+    padding-right: 6.7rem;
+    color:black;
+}
+
+.hintsBox {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: .5rem;
+    display: block;
+}
+
+#hintsList {
+    max-height: 15rem;
+    overflow-y: auto;
+    font-size: 1.3rem;
+    padding:0;
+}
+
+.hintsBox li {
+    text-align: left;
+    list-style-type: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.hintsBox li a {
+    display: grid;
+    color:black;
+}
+
+.hintsBox li span {
+    font-size: 1rem;
+    color:black;
+}
+
+.hintsBox li:hover {
+    background-color: #ebfaeb;
+}
+
+#searchButton {
+    margin: .5rem;
+    font-size: 1.4rem;
+    background-color: black;
+}
+
+.form-control {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#searchTextBox {
+    padding-left: 4rem;
+}
+
+.navBar .fa-search {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    width: 2rem;
+    opacity: .5;
+}
+
+.navBarRigth .fa {
+    margin: .1rem;
+    font-size: 1.5rem;
+}
+
+.navBarTop .searchContainer {
+    flex-grow: 1;
+}
+
+.fileringContainer {
+    width: 12rem;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/*              footer            */
+.siteFooter {
+    font-size: 1rem;
+    color: white;
+    position:fixed;
+    right:0;
+    bottom:0;
+    height:4rem;
+}
+.copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siteFooter .row {
+    margin: 0;
+}
+
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+ul.social-icons {
+    padding: 0;
+}
+.social-icons a {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+
+.social-icons a:active,  .social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+/* container for the main content*/
+.contentPalce {
+    font-size: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+/******************* home page ***************************/
+.logInMessage {
+    width: 20rem;
+    height: 5rem;
+    background: white;
+    position: absolute;
+    z-index: 20;
+    display: none;
+    border: 1px solid red;
+    border-radius: 3px;
+    opacity: .8;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.logInMessage p {
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.homePageContainer {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.recipeContainer .card {
+    height: 35rem;
+}
+
+.recipeContainer {
+    padding: 2rem;
+    color: black;
+}
+
+.recipeContainer.card-body {
+    height: 12rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.recipeContainer .card a {
+    height: 32rem;
+    color: black;
+}
+.recipeContainer .card-img-top {
+    height: 20rem;
+}
+
+.recipeContainer .card-text {
+    overflow: hidden;
+    font-size: 1.4rem;
+} 
+
+.recipeContainer a:hover {
+   color:black;
+}
+.recipeContainer .card-body p {
+    margin: 0;
+    color:black;
+}
+
+.card-title {
+    color:black;
+}
+.recipeContainer .card-title {
+    height: 10%;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.recipeContainer .recipe-footer {
+    height:3rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top:.3rem;
+    padding:0 .3rem;
+}
+
+.fa-heart {
+    font-size: 2rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.recipeContainer .fa-user {
+    margin: .4rem;
+}
+
+.recipe-liked {
+    color: green;
+}
+
+.card:hover {
+    margin:-5px;
+}
+
+.headerBestRec {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    font-family: 'Helvetica', cursive;
+    color: white;
+}
+
+.NoRecipeForCountry {
+    height: 4rem;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid white;
+    color:white;
+    text-transform:capitalize;
+    display: none;
+    margin-top:1rem;
+
+}
+/* head line **/
+.headLine {
+    font-size: 1rem;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.hedLineRecipeContainer {
+    padding: 1.5rem;
+    position: relative
+}
+
+.hedLineRecipeContainer .card {
+    height: 22rem;
+}
+
+.hedLineRecipeContainer .card img {
+    height: 14rem;
+}
+
+.hedLineRecipeContainer .card-body {
+    height: 5rem;
+ 
+}
+
+.hedLineRecipeContainer .recipe-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-right:1rem;
+    padding-left:1rem;
+    margin-top:1rem;
+    height:2rem;
+}
+
+.hedLineRecipeContainer .fa-heart {
+    cursor: pointer;
+    position: absolute;
+    top: -20rem;
+    left: 0;
+    font-size: 2rem;
+   
+}
+
+.recipe-footer div {
+    text-align: center;
+}
+
+.card {
+    transition: margin ease-in;
+}
+
+.headLine .fa-medal {
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    color: red;
+    font-size: 2rem;
+}
+
+/**filter*/
+.filterContainer {
+    margin:0;
+}
+
+/************************************* media */
+@media only screen and (min-width:768px) and (max-width: 990px) {
+    .navBar {
+        display: block;
+        height: 10rem;
+    }
+
+    .navBar .fa-search {
+        top: 1rem;
+    }
+
+    .navBarLeft {
+        height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .logoContainer {
+        margin-top: 1rem;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .siteName {
+        margin-left: 2rem;
+        font-size: 3rem;
+    }
+
+    select#countryDropDown option {
+        font-size: .8em;
+    }
+
+    .navBarBackground {
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navBar {
+        display: block;
+        height: 10rem;
+    }
+
+    .navBarBackground {
+        height: 10rem;
+    }
+
+    .navBar .fa-search {
+        top: .7rem;
+    }
+
+    .navBarLeft {
+        height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .navBarLeft {
+        min-width: 50%;
+        font-size: .7em;
+        float: left;
+    }
+
+    .logoContainer {
+        margin-top: 1rem;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .siteName {
+        margin-left: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .navBarRigth {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 5rem;
+        min-width: 40%;
+    }
+
+     .navBarRigth a {
+         font-size: .5em;
+     }
+
+    .navBarTop {
+        flex-direction: row-reverse;
+    }
+
+    .navBarTop .searchContainer {
+        margin: 0 1rem;
+    }
+
+    #searchButton {
+        font-size: 1rem;
+    }
+
+    select#countryDropDown option {
+        font-size: .8em;
+    }
+
+    .social-icons {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .contentPalce {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
+/* defualt calsses */
+a:hover {
+    text-decoration: none;
+    opacity: .9;
+    color: green;
+}
+
+a {
+    color: white;
+}
+
+.display-none {
+    display: none
+}
+
+.display-block {
+    display: block;
+}
+
+
+/*Styling for LoginPage.aspx & SignUp.aspx & Recipe.aspx*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://previews.123rf.com/images/klenova/klenova1907/klenova190700064/126875554-healthy-food-cooking-background-vegetable-ingredients-and-homemade-soup-fresh-garden-carrots-onions-.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    padding: 5px 0;
+    margin-top:2rem;
+}
+
+
+.loginBox {
+    width: 350px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 50px;
+}
+
+.signBox {
+    width: 370px;
+    background: #000;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 50px;
+}
+
+.Recipe {
+    width: 950px;
+    height: 850px;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 65px 100px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+    left: 38%;
+}
+
+.avatarSign {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -12%;
+    left: 38%;
+}
+.img-DescRow {
+    margin-bottom:5px;
+}
+.RecipeImage {
+    width: 300px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+#login {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#signup {
+    margin: 0;
+    padding: 20px 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.loginBox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginBox a {
+    font-size: 15px;
+    color: red;
+    margin: 0;
+}
+
+.signBox {
+    margin: 0;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signBox input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+#sigUpCountryDropDown {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+
+    #sigUpCountryDropDown option {
+        color: black;
+    }
+
+.loginBox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.signBox input[type="text"], input[type="password"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+}
+
+.signBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+ul {
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    padding: 18px 0 0 365px;
+    margin: 0;
+}
+
+.Ingredients {
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.Instruction {
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.Description, .Instruction, .Ingredients {
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    display: block;
+}
+.show-recipe {
+    color:white;
+}
+#recipeDescription, #recipeIngredients, #recipeInstructions {
+    margin-top: 6px;
+}
+/*filter coutry*/
+.filterCountry li, .filterCategory li {
+    list-style: none;
+}
+
+.filterCountry, .filterCategory {
+    font-size: 1.6rem;
+    margin-left: .6rem;
+}
+.filterContainer {
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.select-container {
+    width: 30rem;
+    margin: .5rem auto;
+    position: relative;
+    color: black;
+}
+
+.selected-option-country, .selected-option-Category {
+    background-color: white;
+    border-radius: 2px;
+    padding: .3rem;
+    cursor: pointer;
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.selected-option-country::after, .selected-option-Category::after {
+    content: "";
+    position: absolute;
+    top: 1.6rem;
+    right: 1.8rem;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: rotate(-135deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.active .selected-option-country::after, active .selected-option-Category::after {
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+ul#countriesList, ul#CategoryList {
+    color: black;
+    padding: 0;
+    background: #cccccc;
+    position: absolute;
+    top: 4.3rem;
+    left: 0;
+    width: 100%;
+    max-height: 25rem;
+    overflow: auto;
+}
+ul#CategoryList {
+    top:0;
+}
+.countries-container, .categories-container {
+    padding-bottom: .1rem;
+    position: absolute;
+    z-index: 20;
+    background: #fff;
+    border-radius: 5px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.active .countries-container, .active .categories-container {
+    transform: rotateX(0);
+}
+
+ul#countriesList li ,ul#CategoryList li {
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+}
+
+ul#countriesList li:hover, ul#CategoryList li:hover {
+    background: #bbb;
+}
+
+/**************** Searchbox *************/
+
+.search-box-country {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    z-index: 30;
+    background-color: #d9d9d9;
+    padding: 0;
+    position: absolute;
+    top: 3.5rem;
+    height: 4.4rem;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+#countrySearchInput:focus {
+    outline: none;
+    border: none;
+}
+#countrySearchInput {
+    width: 100%;
+    border: none;
+    padding: 0 .4rem;
+    border-bottom: 1px solid #d9d9d9;
+    height: 100%;
+}
+.active .search-box-country {
+    transform: rotateX(0);
+}
+
+/**  filter by catrgory */
+.filterByCategoryContainer {
+    margin: .2rem 2rem;
+    border-radius: 2px;
+    padding: .3rem;
+    cursor: pointer;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.6rem;
+    text-align:center;
+}
+.Catrgory-DropDown {
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    color: black;
+    height: 3rem;
+}
+.backgrounHover {
+    background-color: green;
+}
